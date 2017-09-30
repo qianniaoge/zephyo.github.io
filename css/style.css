@@ -94,7 +94,7 @@ h3 {
     color: #393939;
 }
 
-h5 {
+h5 {text-align: center;
     color: #ffbf00;
 }
 
@@ -218,6 +218,7 @@ h5 {
 .box-header.is-visible {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+    text-align: center;
 }
 
 .box-header.menu-is-open {
@@ -731,12 +732,12 @@ b i:last-child {
 }
 .col-sm-12 img {
     object-fit: cover;
-    width: 50vw;
+    width:100%;
     height: 40em;
 }
 .col-sm-6 img {
     object-fit: cover;
-    width: 30em;
+    width:100%;
     height: 20em;
 }
 
