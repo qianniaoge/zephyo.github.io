@@ -26,6 +26,14 @@ body {
     padding: 100px 0;
 }
 
+.main-container a:hover {
+    color: #666;
+  }
+
+  .main-container a {
+    color: rgb(226, 173, 0);
+    font-weight: 600;
+  }
 .center {
     text-align: center;
 }
@@ -33,7 +41,9 @@ body {
 a {
     -webkit-transition: all .3s;
     transition: all .3s
+
 }
+
 
 .uppercase {
     text-transform: uppercase;
@@ -47,6 +57,10 @@ a {
     height: 10px
 }
 
+.h-a {
+    color: #ff7300;
+}
+
 .color {
     color: #ffbf00;
     font-size: 11px;
@@ -57,9 +71,10 @@ a {
 ==================================================*/
 
 h1 {
-    color: #393939;
+    color: #9b6f1f !important;
     font-size: 60px;
     text-transform: uppercase;
+
 }
 
 h3 {
@@ -69,6 +84,41 @@ h3 {
 h5 {text-align: center;
     color: #ffbf00;
 }
+
+p mark{
+    background-color: rgb(255, 255, 255);
+    color: rgb(212, 173, 0); 
+}
+
+
+h5 mark {
+    background-color: rgb(255, 255, 255);
+    color: rgb(212, 173, 0);
+    font-weight: 600;
+}
+h1 mark {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 215, 38);
+
+}
+
+h4 li {
+    list-style-type: none;
+    padding-right: 2.6vw;
+    padding-left: 2.6vw;
+  
+    float: left;
+}
+h4 li i {
+    color: rgb(177, 136, 0);
+    font-size: 1.7em;
+}
+
+h4 li a:hover i {
+    color: #666;
+  }
+   
+
 
 
 /* preloader
@@ -154,19 +204,17 @@ h5 {text-align: center;
     top: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.95);
-    height: 50px;
+
     width: 100%;
     z-index: 3;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.box-header {
-    height: 80px;
+    height: 60px;
     background: transparent;
     box-shadow: none;
 }
+
 
 .box-header {
     -webkit-transition: background-color 0.3s;
@@ -396,15 +444,33 @@ h5 {text-align: center;
 
 .box-intro {
     text-align: center;
+    background-image: url("../img/relax.jpg");
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 246, 239, 0.721) 100%), url("../img/relax.jpg");
+    background-size:cover;
     display: table;
+
+    table-layout: fixed;
     height: 100vh;
-    width: 100%;
+    width: 100%; 
 }
 
 .box-intro .table-cell {
     display: table-cell;
+    width: 70%;
     vertical-align: middle;
+    padding-left: 12vw;
+    
 }
+
+.box-intro .table-cell p {
+  text-align: left;
+  font-size: 16px;
+
+  color: #7a7a7a;
+
+    
+}
+
 
 .box-intro em {
     font-style: normal;
@@ -412,13 +478,16 @@ h5 {text-align: center;
 }
 
 b i:last-child {
-    color: #ffbf00 !important;
+    color: #f3ba00 !important;
 }
 
 .box-intro h5 {
+    text-align: left;
+
     letter-spacing: 4px;
+    font-size: 2vw;
     text-transform: uppercase;
-    color: #999;
+    color: rgb(94, 94, 94);
     line-height: 1.7
 }
 
@@ -433,7 +502,7 @@ b i:last-child {
     left: 50%;
     margin-left: -12px;
     border-radius: 15px;
-    border: 2px solid #888;
+    border: 2px solid rgb(59, 59, 59);
     -webkit-animation: intro 1s;
     animation: intro 1s;
 }
@@ -444,7 +513,7 @@ b i:last-child {
     height: 3px;
     margin: 6px auto;
     border-radius: 4px;
-    background: #888;
+    background: rgb(48, 48, 48);
     -webkit-animation: finger 2s infinite;
     animation: finger 2s infinite;
 }
@@ -501,8 +570,12 @@ b i:last-child {
 /* text rotate */
 
 .box-headline {
-    font-size: 130px;
+    font-size: 6vw;
     line-height: 1.0;
+    text-align: left;
+    margin-left: -3vw;
+
+
 }
 
 .box-words-wrapper {
@@ -685,7 +758,7 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a.active {
     margin-left: 0;
-    background-color: #ffbf00;
+    background-color: #e0a500;
     padding: 0px 20px;
     color: white;
     border-radius: 25px;
@@ -753,7 +826,7 @@ b i:last-child {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #ffbf00;
+    background-color:#ffcb3d;
     padding: 5px 20px;
     border-radius: 25px;
     color: #333;
@@ -863,7 +936,7 @@ footer img {
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #ffbf00;
+    background-color: #c99300;
     opacity: 1;
     color: #fff;
 }
@@ -874,11 +947,11 @@ footer img {
 
 .top-bar {
     color: #333;
-    padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    padding: 100px 0 100px;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.6));
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center center;
     text-align: center;
 }
@@ -888,18 +961,19 @@ footer img {
     text-transform: uppercase;
     font-weight: 700;
     color: #999;
+
     line-height: 50px;
 }
 
 .top-bar p {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #777;
+    color: rgb(255, 255, 255);
 }
 
 .top-bar p a {
-    color: #777;
+    color: rgb(206, 206, 206);
 }
 
 .top-bar p a:hover,
